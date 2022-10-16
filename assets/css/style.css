@@ -1,0 +1,140 @@
+body {
+  background: rgba(132, 155, 219, 0.5);
+  font-family: Arial, Helvetica, sans-serif;
+  color: black;
+}
+
+.btn_model {
+  font-size: 20px;
+}
+.font_size {
+  font-size: 20px;
+}
+.btn_envoyer {
+  justify-self: center;
+  align-self: center;
+  width: 50%;
+  height: 49px;
+  font-size: 18px;
+  background-color: #007bff;
+  border-radius: 10px;
+  border-color: #007bff;
+  color: #fff;
+  border: none;
+  color: #fff;
+}
+.textstyle {
+  font-size: 18px !important;
+}
+.form-control {
+  height: auto;
+  border: 2px solid #e7ebef;
+  background-color: #ffffff;
+  padding: 4px 20px;
+  color: #51668a;
+  border-radius: 30px;
+  margin-bottom: 11px;
+  box-shadow: rgb(99 99 99 / 15%) 0px 0px 4px 0px;
+}
+.formdimention {
+  width: 50%;
+  height: auto;
+}
+.dropdown-menu {
+  font-size: 18px;
+}
+.dropdown-menu {
+  min-width: auto !important;
+}
+@media (max-width: 500px) {
+  .formdimention {
+    width: 100%;
+    height: 100%;
+  }
+}
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+.wrapper {
+  display: inline-flex;
+  list-style: none;
+}
+
+.wrapper .icon {
+  position: relative;
+  background: #ffffff;
+  border-radius: 50%;
+  padding: 15px;
+  margin: 10px;
+  width: 30px;
+  height: 30px;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .tooltip {
+  position: absolute;
+  top: 0;
+  font-size: 14px;
+  background: #ffffff;
+  color: #ffffff;
+  padding: 5px 8px;
+  border-radius: 5px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .tooltip::before {
+  position: absolute;
+  content: "";
+  height: 8px;
+  width: 8px;
+  background: #ffffff;
+  bottom: -3px;
+  left: 50%;
+  transform: translate(-50%) rotate(45deg);
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .icon:hover .tooltip {
+  top: -45px;
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.wrapper .icon:hover span,
+.wrapper .icon:hover .tooltip {
+  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
+}
+
+.wrapper .showw:hover,
+.wrapper .showw:hover .tooltip,
+.wrapper .showw:hover .tooltip::before {
+  background: #038c7f;
+  color: #ffffff;
+}
+
+.wrapper .update:hover,
+.wrapper .update:hover .tooltip,
+.wrapper .update:hover .tooltip::before {
+  background: #ffb525;
+  color: #ffffff;
+}
+
+.wrapper .delete:hover,
+.wrapper .delete:hover .tooltip,
+.wrapper .delete:hover .tooltip::before {
+  background: #e3371e;
+  color: #ffffff;
+}
+.fa-eye1:before {
+  content: "\f06e";
+  color: #fff;
+}
